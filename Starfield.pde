@@ -87,3 +87,12 @@ class OddballParticle extends Particle//inherits from Particle
   }
   //your code here
 }
+void mouseClicked(){
+  for(int y = 1; y<=10; y++){
+    for(int x = 1; x<=10; x++){
+      uh[y-1][x-1] = new Particle(x*50,y*50);
+    }
+  }
+  uh[5][5] = new OddballParticle();
+  start = 0;
+}
